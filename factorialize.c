@@ -16,12 +16,14 @@ int main(void)
 // int factorialize(long long num)
 long long factorialize(long long num)
 {
-    long long answer = 1;
-    for (long long i = 1; i <= num; i++)
-    {
-        answer *= i;
-    }
-    return answer;
+    // long long answer = 1;
+    // for (long long i = 1; i <= num; i++)
+    // {
+    //     answer *= i;
+    // }
+    // return answer;
+
+
     // if (factor==0)
 
     //     {
@@ -32,14 +34,14 @@ long long factorialize(long long num)
     //     return factor * factorialize(factor-1);
     //     printf("%lld", factor);
 
-// //    long long answer = 0;
-// //     for ( int startingDigit = num; startingDigit < 0; startingDigit--)
-// //     {
-// //         return num *= startingDigit;
-// //         answer = startingDigit;
-// //         printf("%lli", num);
-// //     }
-// //     return 1;
-// //   printf("%lli", answer);
+    long long answer = 1;
+    for ( long long startingDigit = num; startingDigit >= 1; startingDigit--)
+    {
+         answer *= startingDigit;
+        // answer = num;
+        // printf("%llu", num);
+    }
+    return answer;
+  printf("%llu", answer);
 }
 
