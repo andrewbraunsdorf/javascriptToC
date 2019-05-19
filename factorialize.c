@@ -16,6 +16,7 @@ int main(void)
 // int factorialize(long long num)
 long long factorialize(long long num)
 {
+    // this also works
     // long long answer = 1;
     // for (long long i = 1; i <= num; i++)
     // {
@@ -24,22 +25,10 @@ long long factorialize(long long num)
     // return answer;
 
 
-    // if (factor==0)
-
-    //     {
-    //         return 1;
-
-    //     }
-
-    //     return factor * factorialize(factor-1);
-    //     printf("%lld", factor);
-
     long long answer = 1;
     for ( long long startingDigit = num; startingDigit >= 1; startingDigit--)
     {
          answer *= startingDigit;
-        // answer = num;
-        // printf("%llu", num);
     }
     return answer;
   printf("%llu", answer);
